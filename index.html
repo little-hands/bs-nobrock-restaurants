@@ -1,5 +1,5 @@
 <!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ヘロヘロ団のお店帳</title>
+<title>ヘロヘロ団の飲んだ店</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap">
 <style>
 /* 写真タイルのグリッド。上部に「今夜の一軒」ガチャ、エリアで絞り込み */
@@ -13,6 +13,7 @@ body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);line-
 .eyebrow{font-size:12px;letter-spacing:.12em;color:var(--muted)}
 h1{font-family:var(--display);font-weight:400;font-size:clamp(32px,6vw,56px);line-height:1.1;margin:4px 0 0}
 h1 em{font-style:normal;color:var(--beer)}
+.sub-lead{margin:10px 0 0;font-size:14px;color:var(--muted)}
 .stat{font-size:14px;color:var(--muted)} .stat b{font-family:var(--display);font-weight:400;font-size:28px;color:var(--fg);margin-right:2px}
 .gacha{font:inherit;font-weight:700;font-size:15px;border:0;border-radius:999px;padding:12px 22px;background:var(--beer);color:#1b1405;cursor:pointer;box-shadow:0 3px 0 #b07a00;transition:transform .1s}
 .gacha:active{transform:translateY(2px);box-shadow:0 1px 0 #b07a00}
@@ -48,7 +49,7 @@ h1 em{font-style:normal;color:var(--beer)}
 @media (prefers-reduced-motion:reduce){.tile,.gacha{transition:none}.tile.pick{animation:none}}
 </style>
 <div class="wrap">
-<header class="hero"><div><div class="eyebrow">BSノブロック〜新橋ヘロヘロ団〜</div><h1>今夜は<em>どこで</em><br>飲む？</h1></div>
+<header class="hero"><div><div class="eyebrow">非公式ファンサイト ・ BSノブロック〜新橋ヘロヘロ団〜</div><h1>ヘロヘロ団が<br><em>飲んだ店</em>ぜんぶ</h1><p class="sub-lead">佐久間さんとスタッフが動画で行ったお店を、概要欄からまとめました。</p></div>
 <div style="display:flex;flex-direction:column;align-items:flex-end;gap:10px"><div class="stat"><b id="n"></b>軒</div><button class="gacha" id="g" type="button">🍺 今夜の一軒を引く</button></div></header>
 <p class="notice">YouTube「BSノブロック〜新橋ヘロヘロ団〜」の各動画の概要欄に載っているお店を、ファンが非公式にまとめた一覧です。チャンネル・出演者・食べログとは関係ありません。写真は食べログのシェア用画像を食べログのサーバーから表示しているもので、このサイトには保存していません。権利は各撮影者・投稿者にあります。評価・予算・最寄り駅は 2026-10-08 時点の表示です。最新の情報はリンク先で確認してください。</p>
 <div class="chips" id="chips"></div>
